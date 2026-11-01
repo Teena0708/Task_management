@@ -11,7 +11,7 @@ const rateLimiter=(req, res, next) => {
         return next();
     }
     if (data.count>=max) {
-        return res.status(429).send("You have exceeded hit limits of API");
+        return res.status(429).send("You have exceeded  limitss of API");
     }
     data.count++;
     next();
